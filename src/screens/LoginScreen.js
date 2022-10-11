@@ -15,7 +15,7 @@ const LoginScreen = ({navigation}) => {
             <View style={styles.titleContainer}>
                 <Text style={styles.screenTitle}>LOGIN</Text>
             </View>
-            <View style={styles.inputContainer}>
+            <View>
                 <KeyboardAvoidingView style={styles.idContainer} behavior="padding" enabled>
                     <TextInput style={styles.inputText} placeholder="ID" />
                     <TextInput style={styles.inputText} placeholder="PW" />
