@@ -11,17 +11,26 @@ const MyPageScreen = () => {
     return (
         <View style={styles.container}>
             <View style={styles.profileContainer}>
-                <TouchableOpacity onPress={() => Alert.alert('Profile...')}>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => Alert.alert('Profile...')}
+                >
                     <Text style={styles.text}>   UserName</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.sellContainer}>
-                <TouchableOpacity onPress={() => Alert.alert('SellHistory...')}>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => Alert.alert('SellHistory...')}
+                >
                     <Text style={styles.text}>   SellHistory</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.buyContainer}>
-                <TouchableOpacity onPress={() => Alert.alert('buyHistory...')}>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => Alert.alert('buyHistory...')}
+                >
                     <Text style={styles.text}>   BuyHistory</Text>
                 </TouchableOpacity>
             </View>
@@ -32,20 +41,28 @@ const MyPageScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'white',
-        marginVertical: 50,
+        backgroundColor: 'black',
     },
     profileContainer: {
         marginVertical: 10,
+        marginTop: 30,
+        alignItems: 'center'
     },
     sellContainer: {
         marginVertical: 10,
+        alignItems: 'center'
     },
    buyContainer: {
        marginVertical: 10,
+       alignItems: 'center'
    },
    text: {
-        fontSize: 25,
+        fontSize: 20,
+   },
+   button: {
+        backgroundColor: 'white',
+        padding: 10,
+        width: 370,
    }
 });
 

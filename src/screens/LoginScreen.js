@@ -24,7 +24,7 @@ const LoginScreen = ({navigation}) => {
             <View style={styles.loginButtonContainer}>
                 <Button
                     title = "LOGIN"
-                    onPress={() => navigation.navigate('Category')}
+                    onPress={() => navigation.navigate('HomeTab')}
                     color="black"
 
                 />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     View,
     Text,
@@ -14,6 +14,11 @@ const UploadScreen = () => {
 
     const brokerList = ['Broker1', 'Broker2', 'Broker3'];
     const [broker, setBroker] = useState(null);
+
+//    const setPick = () => {
+//        const selected = method;
+//        setMethod(selected)
+//    }
 
     return (
         <View style={styles.container}>

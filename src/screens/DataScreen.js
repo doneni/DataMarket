@@ -17,12 +17,13 @@ const DataScreen = () => {
             </TouchableOpacity>
         </View>
         <View style={styles.metaContainer}>
-            <Text style={styles.text}>Here comes MetaData...</Text>
+            <Text style={styles.text}>   Here comes MetaData...</Text>
         </View>
         <View style={styles.buttonContainer}>
             <Button
                 title="PURCHASE"
                 onPress={() => Alert.alert('on purchasing...')}
+                color='#B64747'
             />
         </View>
     </View>
@@ -34,12 +35,13 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'black',
         alignItems: 'center',
+        marginTop: 50,
     },
     profileContainer: {
         flex: 1,
         backgroundColor: 'white',
-        marginVertical: 10,
-        width: 350,
+        marginTop: 20,
+        width: 370,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -47,11 +49,11 @@ const styles = StyleSheet.create({
         flex: 10,
         backgroundColor: 'white',
         marginVertical: 15,
-        width: 350,
+        width: 370,
     },
     buttonContainer: {
           flex: 1,
-          justifyContent: 'space-between',
+          justifyContent: 'flex-end',
           width: 400,
     },
     text: {

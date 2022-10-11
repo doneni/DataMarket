@@ -8,6 +8,7 @@ import {
   Alert,
   FlatList,
   ActivityIndicator,
+  Button,
 } from 'react-native';
 
 const renderItem = ({item}) => {
@@ -75,6 +76,13 @@ const HomeScreen = ({navigation}) => {
                     ListFooterComponent={loading && <ActivityIndicator />}
                 />
             </SafeAreaView>
+            <View style={styles.testButton}>
+                <Button
+                    title="Pressing Single Data..."
+                    onPress={() => navigation.navigate('Data')}
+                    color="black"
+                />
+            </View>
         </View>
     );
 };
@@ -82,11 +90,16 @@ const HomeScreen = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'black',
     },
     dataList: {
-        flex: 6,
+        marginTop: 50,
+        flex: 15,
         backgroundColor: 'white',
+        justifyContent: 'flex-end',
+    },
+    testButton: {
+        justifyContent: 'flex-end',
+        flex: 1,
     },
 });
 
