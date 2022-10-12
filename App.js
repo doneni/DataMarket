@@ -18,7 +18,6 @@ import NotificationScreen from './src/screens/NotificationScreen';
 import MyPageScreen from './src/screens/MyPageScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import DataScreen from './src/screens/DataScreen';
-import test from './src/screens/test';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -90,13 +89,6 @@ const App = () => {
     <Provider store={store}>
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen
-                    name='test'
-                    component={test}
-                    options={{
-                        headerShown: false,
-                    }}
-                />
                 <Stack.Screen
                     name="Login"
                     component={LoginScreen}
